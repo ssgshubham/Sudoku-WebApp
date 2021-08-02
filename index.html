@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Sudoku</title>
+    </head>
+    <body>
+        <main>
+            <div class="back">
+            </div> 
+            <div class="game">
+                <h1>Sudoku</h1>
+                <div class="sudoku">
+                    <input type="text" class="value" id="value0" name="value0" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value1" name="value1" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="border-right" id="value2" name="value2" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value3" name="value3" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value4" name="value4" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="border-right" id="value5" name="value5" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value6" name="value6" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value7" name="value7" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value8" name="value8" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value9" name="value9" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value10" name="value10" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value11" name="value11" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value12" name="value12" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value13" name="value13" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value14" name="value14" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value15" name="value15" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value16" name="value16" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value17" name="value17" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="border-bottom" id="value18" name="value18" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value19" name="value19" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value20" name="value20" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value21" name="value21" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value22" name="value22" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value23" name="value23" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value24" name="value24" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value25" name="value25" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value26" name="value26" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value27" name="value27" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value28" name="value28" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value29" name="value29" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value30" name="value30" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value31" name="value31" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value32" name="value32" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value33" name="value33" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value34" name="value34" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value35" name="value35" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value36" name="value36" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value37" name="value37" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value38" name="value38" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value39" name="value39" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value40" name="value40" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value41" name="value41" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value42" name="value42" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value43" name="value43" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value44" name="value44" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="border-bottom" id="value45" name="value45" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value46" name="value46" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value47" name="value47" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value48" name="value48" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value49" name="value49" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value50" name="value50" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value51" name="value51" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value52" name="value52" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value53" name="value53" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value54" name="value54" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value55" name="value55" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value56" name="value56" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value57" name="value57" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value58" name="value58" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value59" name="value59" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value60" name="value60" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value61" name="value61" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value62" name="value62" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value63" name="value63" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value64" name="value64" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value65" name="value65" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value66" name="value66" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value67" name="value67" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value68" name="value68" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value69" name="value69" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value70" name="value70" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value71" name="value71" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value72" name="value72" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value73" name="value73" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value74" name="value74" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value75" name="value75" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value76" name="value76" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value77" name="value77" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value78" name="value78" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value79" name="value79" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+                    <input type="text" class="value" id="value80" name="value80" maxlength="1" onKeyDown="myFunction()" oninput="checkValid()"/>
+
+                </div>
+                
+                <div class="buttons">
+                    <a href="./index.html">
+                        <button>New Game</button>
+                    </a>
+                    <button onclick="resetBoard()" class="button">Reset Board</button>
+                    <button onclick="solveBoard()" class="button">Get Solution</button>
+                    <!-- <button class="button">Submit Entries</button> -->
+                </div>
+                <p id="gamestate">Hello</p>
+                <br>
+                <br>
+                <h2>Made by - <a href="https://www.linkedin.com/in/ssg9878/">Shubham Sarthak Gupta</a></h2>
+                <br><h4>Project based on Backtracking and Recursion</h4>
+                <br><h4><a href="https://github.com/ssgshubham/Sudoku-WebApp"><img src="git.png"></img></a></h4>
+            </div>
+            <div class="next">
+            </div>
+        </main>
+        <script src="./events.js"></script>
+    </body>
+<html>
